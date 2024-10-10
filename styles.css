@@ -1,0 +1,560 @@
+
+
+/* General Styles */
+p {
+    font-size: 16px;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    color: #1F1F1F;
+    margin: 0;
+}
+
+h1 {
+    font-size: 20px;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    color: #1F1F1F;
+    margin: 0;
+}
+
+h2 {
+    font-size: 16px;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: #1F1F1F;
+    margin: 0;
+}
+
+h3 {
+    font-size: 16px;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: #1f1f1f75;
+    margin: 0;
+}
+
+h4 {
+    font-size: 12px;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: #1f1f1f75;
+    margin: 0; 
+}
+
+li {
+    font-size: 18px;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    color: #1F1F1F;
+}
+
+a {
+    text-decoration: none;
+} 
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1.6;
+    background-color: #ffffff;
+    color: #333;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:  0;
+    position: fixed;
+    left: 0;
+    right: 0;
+    width: 100%;
+    top: 0;
+    background-color: #ffffff;
+    z-index: 1000;
+    transition: top 0.5s ease-in-out; 
+}
+
+.hide-nav {
+    top: -100px; 
+}
+
+.show-nav {
+    top: 0;
+}
+
+.logo img {
+    max-width: 114px;
+    min-height: 24px;
+    padding-left: 72px;
+    margin: 0;
+}
+
+.logo {
+    padding: 0;
+    margin: 0;
+    height: 24px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 0;
+    margin: 0;
+    padding: 0;
+    padding-right: 72px;
+}
+
+nav ul li {
+    padding: 28px 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    border-bottom: 1px solid #1F1F1F hidden;
+    padding-bottom: 3px;
+}
+
+nav ul li a:hover {
+    /* border-bottom: 0.6px solid #1F1F1F; */
+    font-weight: 300;
+    color: #E84747;
+}
+
+.hero {
+    padding-top: 24px;
+    background-image: url('landing.png');
+    background-size: cover;
+    background-position: top;
+    height:100vh;
+    display: flex;
+    align-items: last baseline;
+    justify-content: center;
+    position: relative;
+}
+
+.hero-content {
+    text-align: left;
+    background-color: none;
+    padding: 72px 72px;
+    padding-bottom: 96px;
+    border-radius: 10px;
+    width: 100%;
+}
+
+.hero h1 {
+    margin: 0px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-top: 12px;
+    color: #1F1F1F;
+}
+
+.projects {
+    margin: 50px 0;
+    padding: 48px 72px;
+    padding-top: 116px;
+}
+
+.projects-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 16px;
+}
+
+.projects h1 {
+ margin: 0;
+}
+
+.tabs ul {
+    list-style: none;
+    display: flex;
+    gap: 32px;
+    padding: 0;
+    margin: 0;
+}
+
+.tabs ul li {
+    padding: 0;
+    cursor: pointer;
+    color: #1f1f1f7c;
+}
+
+.tabs ul li.active {
+    border-bottom: 1px solid #1F1F1F;
+    font-weight: 400;
+    color: #1F1F1F;
+}
+
+.project-list {
+    display: flex;
+    flex-direction: column;
+    /* gap: 40px; */
+}
+
+.project-item {
+    border-top: 0.4px #1f1f1f42 solid;
+    display: flex;
+    justify-content: space-between;
+    align-items:flex-start;
+    padding-top: 12px;
+    padding-bottom: 24px;
+}
+
+.project-item h2 {
+    margin: 0;
+    margin-bottom: 2px;
+    font-weight: 400;
+}
+
+.project-item h3 {
+    margin-bottom: 12px;
+}
+
+.project-item p {
+    font-size: 16px;
+    color: #1F1F1F;
+    margin-bottom: 12px;
+}
+
+.project-item a {
+    text-decoration: none;
+    color: #333;
+}
+.item-text:hover h2{
+    /* text-decoration: underline; */
+    color: #E84747;
+}
+
+
+.item-text {
+    max-width: 448px;
+}
+
+.project-thumbnail-nib {
+    min-width: 335px;
+    min-height: 227px;
+ background-image: url('NIB-img-1.png');
+    background-position: center;
+    background-size:cover; 
+    background-color: #ffffff;
+    border-radius: 4px;
+    margin-left: 20px;
+}
+
+.project-thumbnail-ww {
+    min-width: 335px;
+    min-height: 227px;
+ background-image: url('WW-img-1.png');
+    background-position: center;
+    background-size:cover; 
+    background-color: #ffffff;
+    border-radius: 4px;
+    margin-left: 20px;
+}
+
+
+.project-thumbnail-ocp {
+    min-width: 335px;
+    min-height: 227px;
+ background-image: url('OptusComp-img-1.png');
+    background-position: center;
+    background-size:cover; 
+    background-color: #ffffff;
+    border-radius: 4px;
+    margin-left: 20px;
+}
+
+.project-thumbnail-ops {
+    min-width: 335px;
+    min-height: 227px;
+ background-image: url('OPS-img-1.png');
+    background-position: center;
+    background-size:cover; 
+    background-color: #ffffff;
+    border-radius: 4px;
+    margin-left: 20px;
+}
+
+.project-thumbnail-s {
+    min-width: 335px;
+    min-height: 227px;
+ background-image: url('Sproutly.png');
+    background-position: center;
+    background-size:cover; 
+    background-color: #ffffff;
+    border-radius: 4px;
+    margin-left: 20px;
+}
+.project-thumbnail-ss {
+    min-width: 335px;
+    min-height: 227px;
+ background-image: url('sunlights-img-1.png');
+    background-position: center;
+    background-size:cover; 
+    background-color: #ffffff;
+    border-radius: 4px;
+    margin-left: 20px;
+}
+
+.project-thumbnail-hearts {
+    min-width: 335px;
+    min-height: 227px;
+ background-image: url('hearts-img-1.png');
+    background-position: center;
+    background-size:cover; 
+    background-color: #ffffff;
+    border-radius: 4px;
+    margin-left: 20px;
+}
+
+footer {
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    padding-top: 48px;
+    padding-bottom: 32px;
+    padding-left: 72px;
+    padding-right: 72px;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+/* .text-background {
+    background-image: ;
+} */
+
+
+/* CASE STudy *//* CASE Study Styles */
+
+.nib-header {
+    border-bottom: 4px #144B37 solid;
+    position:relative;
+
+}
+
+.header-content {
+    padding-top: 56px;
+    padding-bottom: 12px;
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    width: 1200px;
+    margin: auto;
+    border-bottom: 0.4px #1f1f1f50 solid;
+
+}
+.content {
+    padding-top: 24px;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    max-width: 1200px;
+    background-color: white;
+}
+
+.text-content {
+    flex: 2;
+    margin-right: 24px;
+    max-width: 616px;
+}
+
+.text-content h1 {
+    font-size: 18px;
+}
+.accordion {
+    width: 100%;
+}
+
+.accordion-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+}
+.accordion-item {
+    border-bottom: 0.4px #1f1f1f50 solid hidden;
+}
+
+.accordion-header:hover h1 {
+    color: #E84747;
+}
+
+.accordion-header:hover i {
+    color: #E84747;
+}
+
+.accordion-item.active {
+    border-bottom: 0.4px #1f1f1f50 solid hidden;
+}
+
+/* .accordion-item.active h1 {
+    color: #E84747;
+} */
+
+/* .accordion-item.active i {
+    color: #E84747;
+} */
+
+.accordion-header {
+    margin-top: 16px;
+    cursor: pointer;    
+}
+
+.intro-text {
+    margin-top: 0;
+}
+
+.accordion-content {
+ margin-bottom: 16px;
+}
+
+.accordion p {
+    margin-top: 16px;
+}
+.accordion-item .accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    background-color: #fff;
+}
+
+.accordion-content li {
+    font-size: 16px;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    color: #1F1F1F;
+    margin: 0;
+}
+
+.screenshots {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    max-width: 520px;
+}
+
+.screenshot img {
+    max-width: 520px;
+      cursor: pointer;
+}
+.screenshot {
+    margin-bottom: 20px;
+}
+
+.screenshot-placeholder {
+    background-color: #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 330px;
+    font-size: 18px;
+    color: white;
+    text-align: center;
+    min-width: 500px;
+
+
+}
+/* Overlay Styles */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    z-index: 1001;
+    overflow: hidden;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.overlay.visible {
+    visibility: visible;
+    opacity: 1;
+}
+
+.overlay-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+    overflow-y: auto;
+    height: 100%; /* Full height for scrolling */
+    scroll-behavior: smooth;
+}
+
+.overlay-images {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    overflow-y: scroll;
+}
+
+.overlay-images img {
+    width: 66vw;  /* Set consistent width */
+    height: auto; /* Maintain aspect ratio */
+    margin: 30px 0;  /* Margin to ensure there's space between images */
+    object-fit: contain;  /* Preserve aspect ratio */
+}
+
+.close-overlay {
+    position: fixed;
+    top: 10px;
+    right: 20px;
+    font-size: 30px;
+    color: rgba(255, 255, 255, 0);
+    cursor: pointer;
+    z-index: 1002; /* Above everything else */
+}
+
+/* Optional: Hide scrollbar if desired */
+/* .overlay-images::-webkit-scrollbar {
+    display:;
+} */
+
+ /* scrolling effects */
+html, body {
+    height: 100%;
+    margin: 0;
+    scroll-behavior: smooth;
+    overflow: hidden;
+}
+
+section {
+    scroll-snap-align: start; /* Ensures sections align properly when snapped */
+    scroll-snap-stop: always; /* Makes sure it snaps precisely to the start */
+}
+
+body {
+    scroll-snap-type: y mandatory; /* Ensures that scrolling happens in the Y-axis and snapping is mandatory */
+    overflow-y: scroll; /* Allows for vertical scrolling */
+}
