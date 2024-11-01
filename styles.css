@@ -1,5 +1,3 @@
-
-
 /* General Styles */
 p {
     font-size: 16px;
@@ -48,7 +46,7 @@ h4 {
     font-weight: 400;
     font-style: normal;
     color: #1f1f1f75;
-    margin: 0; 
+    margin: 0;
 }
 
 li {
@@ -62,7 +60,7 @@ li {
 
 a {
     text-decoration: none;
-} 
+}
 
 body {
     font-family: Arial, sans-serif;
@@ -78,7 +76,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding:  0;
+    padding: 0;
     position: fixed;
     left: 0;
     right: 0;
@@ -86,11 +84,11 @@ header {
     top: 0;
     background-color: #ffffff;
     z-index: 1000;
-    transition: top 0.5s ease-in-out; 
+    transition: top 0.5s ease-in-out;
 }
 
 .hide-nav {
-    top: -100px; 
+    top: -100px;
 }
 
 .show-nav {
@@ -141,7 +139,7 @@ nav ul li a:hover {
     background-image: url('landing.png');
     background-size: cover;
     background-position: top;
-    height:100vh;
+    height: 100vh;
     display: flex;
     align-items: last baseline;
     justify-content: center;
@@ -181,7 +179,7 @@ nav ul li a:hover {
 }
 
 .projects h1 {
- margin: 0;
+    margin: 0;
 }
 
 .tabs ul {
@@ -214,7 +212,7 @@ nav ul li a:hover {
     border-top: 0.4px #1f1f1f42 solid;
     display: flex;
     justify-content: space-between;
-    align-items:flex-start;
+    align-items: flex-start;
     padding-top: 12px;
     padding-bottom: 24px;
 }
@@ -240,7 +238,8 @@ nav ul li a:hover {
     text-decoration: none;
     color: #333;
 }
-.item-text:hover h2{
+
+.item-text:hover h2 {
     /* text-decoration: underline; */
     color: #E84747;
 }
@@ -253,9 +252,9 @@ nav ul li a:hover {
 .project-thumbnail-nib {
     min-width: 335px;
     min-height: 227px;
- background-image: url('NIB-img-1.png');
+    background-image: url('NIB-img-1.png');
     background-position: center;
-    background-size:cover; 
+    background-size: cover;
     background-color: #ffffff;
     border-radius: 4px;
     margin-left: 20px;
@@ -264,9 +263,9 @@ nav ul li a:hover {
 .project-thumbnail-ww {
     min-width: 335px;
     min-height: 227px;
- background-image: url('WW-img-1.png');
+    background-image: url('WW-img-1.png');
     background-position: center;
-    background-size:cover; 
+    background-size: cover;
     background-color: #ffffff;
     border-radius: 4px;
     margin-left: 20px;
@@ -276,9 +275,9 @@ nav ul li a:hover {
 .project-thumbnail-ocp {
     min-width: 335px;
     min-height: 227px;
- background-image: url('OptusComp-img-1.png');
+    background-image: url('OptusComp-img-1.png');
     background-position: center;
-    background-size:cover; 
+    background-size: cover;
     background-color: #ffffff;
     border-radius: 4px;
     margin-left: 20px;
@@ -287,9 +286,9 @@ nav ul li a:hover {
 .project-thumbnail-ops {
     min-width: 335px;
     min-height: 227px;
- background-image: url('OPS-img-1.png');
+    background-image: url('OPS-img-1.png');
     background-position: center;
-    background-size:cover; 
+    background-size: cover;
     background-color: #ffffff;
     border-radius: 4px;
     margin-left: 20px;
@@ -298,19 +297,20 @@ nav ul li a:hover {
 .project-thumbnail-s {
     min-width: 335px;
     min-height: 227px;
- background-image: url('Sproutly.png');
+    background-image: url('Sproutly.png');
     background-position: center;
-    background-size:cover; 
+    background-size: cover;
     background-color: #ffffff;
     border-radius: 4px;
     margin-left: 20px;
 }
+
 .project-thumbnail-ss {
     min-width: 335px;
     min-height: 227px;
- background-image: url('sunlights-img-1.png');
+    background-image: url('sunlights-img-1.png');
     background-position: center;
-    background-size:cover; 
+    background-size: cover;
     background-color: #ffffff;
     border-radius: 4px;
     margin-left: 20px;
@@ -319,9 +319,9 @@ nav ul li a:hover {
 .project-thumbnail-hearts {
     min-width: 335px;
     min-height: 227px;
- background-image: url('hearts-img-1.png');
+    background-image: url('hearts-img-1.png');
     background-position: center;
-    background-size:cover; 
+    background-size: cover;
     background-color: #ffffff;
     border-radius: 4px;
     margin-left: 20px;
@@ -346,11 +346,12 @@ footer p {
 } */
 
 
-/* CASE STudy *//* CASE Study Styles */
+/* CASE STudy */
+/* CASE Study Styles */
 
 .nib-header {
     border-bottom: 4px #144B37 solid;
-    position:relative;
+    position: relative;
 
 }
 
@@ -365,6 +366,7 @@ footer p {
     border-bottom: 0.4px #1f1f1f50 solid;
 
 }
+
 .content {
     padding-top: 24px;
     display: flex;
@@ -383,6 +385,7 @@ footer p {
 .text-content h1 {
     font-size: 18px;
 }
+
 .accordion {
     width: 100%;
 }
@@ -393,6 +396,7 @@ footer p {
     align-items: center;
     margin: 0;
 }
+
 .accordion-item {
     border-bottom: 0.4px #1f1f1f50 solid hidden;
 }
@@ -419,7 +423,7 @@ footer p {
 
 .accordion-header {
     margin-top: 16px;
-    cursor: pointer;    
+    cursor: pointer;
 }
 
 .intro-text {
@@ -427,12 +431,13 @@ footer p {
 }
 
 .accordion-content {
- margin-bottom: 16px;
+    margin-bottom: 16px;
 }
 
 .accordion p {
     margin-top: 16px;
 }
+
 .accordion-item .accordion-content {
     max-height: 0;
     overflow: hidden;
@@ -459,8 +464,10 @@ footer p {
 
 .screenshot img {
     max-width: 520px;
-      cursor: pointer;
+    cursor: pointer;
+    border-radius: 10px;
 }
+
 .screenshot {
     margin-bottom: 20px;
 }
@@ -478,6 +485,7 @@ footer p {
 
 
 }
+
 /* Overlay Styles */
 .overlay {
     position: fixed;
@@ -508,7 +516,8 @@ footer p {
     width: 100%;
     box-sizing: border-box;
     overflow-y: auto;
-    height: 100%; /* Full height for scrolling */
+    height: 100%;
+    /* Full height for scrolling */
     scroll-behavior: smooth;
 }
 
@@ -521,10 +530,14 @@ footer p {
 }
 
 .overlay-images img {
-    width: 66vw;  /* Set consistent width */
-    height: auto; /* Maintain aspect ratio */
-    margin: 30px 0;  /* Margin to ensure there's space between images */
-    object-fit: contain;  /* Preserve aspect ratio */
+    width: 66vw;
+    /* Set consistent width */
+    height: auto;
+    /* Maintain aspect ratio */
+    margin: 30px 0;
+    /* Margin to ensure there's space between images */
+    object-fit: contain;
+    /* Preserve aspect ratio */
 }
 
 .close-overlay {
@@ -534,7 +547,8 @@ footer p {
     font-size: 30px;
     color: rgba(255, 255, 255, 0);
     cursor: pointer;
-    z-index: 1002; /* Above everything else */
+    z-index: 1002;
+    /* Above everything else */
 }
 
 /* Optional: Hide scrollbar if desired */
@@ -542,8 +556,9 @@ footer p {
     display:;
 } */
 
- /* scrolling effects */
-html, body {
+/* scrolling effects */
+html,
+body {
     height: 100%;
     margin: 0;
     scroll-behavior: smooth;
@@ -551,11 +566,140 @@ html, body {
 }
 
 section {
-    scroll-snap-align: start; /* Ensures sections align properly when snapped */
-    scroll-snap-stop: always; /* Makes sure it snaps precisely to the start */
+    scroll-snap-align: start;
+    /* Ensures sections align properly when snapped */
+    scroll-snap-stop: always;
+    /* Makes sure it snaps precisely to the start */
 }
 
 body {
-    scroll-snap-type: y mandatory; /* Ensures that scrolling happens in the Y-axis and snapping is mandatory */
-    overflow-y: scroll; /* Allows for vertical scrolling */
+    scroll-snap-type: y mandatory;
+    /* Ensures that scrolling happens in the Y-axis and snapping is mandatory */
+    overflow-y: scroll;
+    /* Allows for vertical scrolling */
+}
+
+
+
+/* REPSONSIVENESS - mobile */
+
+@media (max-width: 768px) {
+    .logo img {
+        max-width: 111px;
+        min-height: 23px;
+        padding-left: 18px;
+        padding-top: 24px;
+        margin: 0;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .projects {
+        margin: 0;
+        padding: 48px 18px;
+        padding-top: 64px;
+    }
+
+    .projects-header {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content:space-between;
+        padding-bottom: 16px;
+        gap: 16px;
+    }
+
+    .tabs ul {
+        list-style: none;
+        display: flex;
+        gap: 16px;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .tabs ul li {
+        padding: 0;
+        cursor: pointer;
+        color: #1f1f1f7c;
+    }
+    
+    .tabs ul li.active {
+        border-bottom: 1px solid #1F1F1F;
+        font-weight: 400;
+        color: #1F1F1F;
+    }
+    
+    .tabs {display: none;}
+
+    .project-item {
+        border-top: 0.4px #1f1f1f42 solid;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        align-items:flex-end;
+        padding-top: 16px;
+        padding-bottom: 24px;
+    }
+
+    .project-thumbnail-nib {
+        width: 100%;
+        background-image: url('NIB-img-1.png');
+        background-position: center;
+        background-size: cover;
+        background-color: #ffffff;
+        border-radius: 6px;
+        margin-bottom: 16px;
+    }
+
+    .project-thumbnail-ww {
+        width: 100%;
+        background-image: url('WW-img-1.png');
+        background-position: center;
+        background-size: cover;
+        background-color: #ffffff;
+        border-radius: 6px;
+        margin-bottom: 16px;
+    }
+    .project-thumbnail-ocp {
+        width: 100%;
+        background-image: url('OptusComp-img-1.png');
+        background-position: center;
+        background-size: cover;
+        background-color: #ffffff;
+        border-radius: 6px;
+        margin-bottom: 16px;
+    }
+
+    .project-thumbnail-ops {
+        width: 100%;
+        background-image: url('OPS-img-1.png');
+        background-position: center;
+        background-size: cover;
+        background-color: #ffffff;
+        border-radius: 6px;
+        margin-bottom: 16px;
+    }
+
+    .project-thumbnail-ss {
+        width: 100%;
+        background-image: url('sunlights-img-1.png');
+        background-position: center;
+        background-size: cover;
+        background-color: #ffffff;
+        border-radius: 6px;
+        margin-bottom: 16px;
+    }
+
+    .project-thumbnail-s {
+        width: 100%;
+        background-image: url('Sproutly.png');
+        background-position: center;
+        background-size: cover;
+        background-color: #ffffff;
+        border-radius: 6px;
+        margin-bottom: 16px;
+    }
+    
 }
