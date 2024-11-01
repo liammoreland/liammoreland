@@ -260,6 +260,17 @@ nav ul li a:hover {
     margin-left: 20px;
 }
 
+.project-thumbnail-our {
+    min-width: 335px;
+    min-height: 227px;
+    background-image: url('ourspace/OurSpace-img-1.png');
+    background-position: center;
+    background-size: cover;
+    background-color: #ffffff;
+    border-radius: 4px;
+    margin-left: 20px;
+}
+
 .project-thumbnail-ww {
     min-width: 335px;
     min-height: 227px;
@@ -350,10 +361,18 @@ footer p {
 /* CASE Study Styles */
 
 .nib-header {
-    border-bottom: 4px #144B37 solid;
+    border-bottom: 3px #144B37 solid;
     position: relative;
 
 }
+
+.our-header {
+    border-bottom: 3px #4EC0F3 solid;
+    position: relative;
+
+}
+
+
 
 .header-content {
     padding-top: 56px;
@@ -618,6 +637,20 @@ body {
         display: none;
     }
 
+
+.hero {
+    padding-top: 24px;
+    background-image: url('landing.png');
+    background-size: cover;
+    background-position: top;
+    height: 99vh;
+    display: flex;
+    align-items: last baseline;
+    justify-content: center;
+    position: relative;
+}
+
+
     .projects {
         margin: 0;
         padding: 24px 18px;
@@ -677,6 +710,15 @@ body {
         margin-bottom: 0px;
     }
 
+    .project-thumbnail-our {
+        width: 100%;
+        background-image: url('ourspace/OurSpace-img-1.png');
+        background-position: center;
+        background-size: cover;
+        background-color: #ffffff;
+        border-radius: 6px;
+        margin-bottom: 16px;
+    }
     .project-thumbnail-nib {
         width: 100%;
         background-image: url('NIB-img-1.png');
@@ -750,6 +792,12 @@ body {
 
 .nib-header {
     border-bottom: 3px #144B37 solid;
+    position: relative;
+
+}
+
+.our-header {
+    border-bottom: 3px #4EC0F3 solid;
     position: relative;
 
 }
