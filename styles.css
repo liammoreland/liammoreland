@@ -230,7 +230,7 @@ nav ul li a:hover {
 
 .project-item p {
     font-size: 16px;
-    color: #1F1F1F;
+    color: #333;
     margin-bottom: 12px;
 }
 
@@ -584,29 +584,47 @@ body {
 /* REPSONSIVENESS - mobile */
 
 @media (max-width: 768px) {
+
+    header {
+        padding: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        min-height: 72px;
+        top: 0;
+        background-color: #ffffff;
+        z-index: 1000;
+        transition: top 0.5s ease-in-out;
+        height: fit-content;
+    }
+    .header-content {
+        background-color: white;
+    }
+    
     .logo img {
         max-width: 111px;
         min-height: 23px;
         padding-left: 18px;
-        padding-top: 24px;
+        padding-top: 0px;
         margin: 0;
+        background-color: white;
     }
-
+    
     nav {
         display: none;
     }
 
     .projects {
         margin: 0;
-        padding: 48px 18px;
-        padding-top: 64px;
+        padding: 24px 18px;
+        padding-top: 84px;
     }
 
     .projects-header {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-        justify-content:space-between;
+        justify-content: space-between;
         padding-bottom: 16px;
         gap: 16px;
     }
@@ -618,29 +636,41 @@ body {
         padding: 0;
         margin: 0;
     }
-    
+
     .tabs ul li {
         padding: 0;
         cursor: pointer;
         color: #1f1f1f7c;
     }
-    
+
     .tabs ul li.active {
         border-bottom: 1px solid #1F1F1F;
         font-weight: 400;
         color: #1F1F1F;
     }
-    
-    .tabs {display: none;}
+
+    .tabs {
+        display: none;
+    }
+
+    .project-item:first-of-type {
+        padding-top: 16px;
+    }
 
     .project-item {
         border-top: 0.4px #1f1f1f42 solid;
         display: flex;
         flex-direction: column-reverse;
         justify-content: space-between;
-        align-items:flex-end;
-        padding-top: 16px;
+        align-items: flex-end;
+        padding-top: 24px;
         padding-bottom: 24px;
+    }
+
+    .project-item p {
+        font-size: 16px;
+        color: #1F1F1F;
+        margin-bottom: 0px;
     }
 
     .project-thumbnail-nib {
@@ -662,6 +692,7 @@ body {
         border-radius: 6px;
         margin-bottom: 16px;
     }
+
     .project-thumbnail-ocp {
         width: 100%;
         background-image: url('OptusComp-img-1.png');
@@ -701,5 +732,14 @@ body {
         border-radius: 6px;
         margin-bottom: 16px;
     }
-    
+
+    footer {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        padding-top: 48px;
+        padding-bottom: 32px;
+        padding-left: 18px;
+        padding-right: 18px;
+    }
 }
