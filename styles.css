@@ -167,7 +167,7 @@ nav ul li a:hover {
 
 .projects {
     margin: 50px 0;
-    padding: 48px 72px;
+    padding: 0px 72px;
     padding-top: 116px;
 }
 
@@ -182,6 +182,20 @@ nav ul li a:hover {
     margin: 0;
 }
 
+
+.tab-content {
+    display: none; /* Hide all content sections by default */
+}
+
+.tab-content.active {
+    display: block; /* Show only the active content section */
+}
+
+.tab-item.active {
+    color: #1F1F1F;
+    font-weight: bold;
+    border-bottom: 2px solid #1F1F1F; /* Indicate active tab */
+}
 .tabs ul {
     list-style: none;
     display: flex;
