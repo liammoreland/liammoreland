@@ -308,7 +308,7 @@ nav ul li a:hover {
 .project-thumbnail-s {
     min-width: 335px;
     min-height: 227px;
-    background-image: url('Sproutly.png');
+    background-image: url('sproutly/Sproutly-img-1.png');
     background-position: center;
     background-size: cover;
     background-color: #ffffff;
@@ -368,6 +368,12 @@ footer p {
 
 .our-header {
     border-bottom: 3px #4EC0F3 solid;
+    position: relative;
+
+}
+
+.sproutly-header {
+    border-bottom: 3px #624D34 solid;
     position: relative;
 
 }
@@ -798,6 +804,12 @@ body {
 
 .our-header {
     border-bottom: 3px #4EC0F3 solid;
+    position: relative;
+
+}
+
+.sproutly-header {
+    border-bottom: 3px #624D34 solid;
     position: relative;
 
 }
