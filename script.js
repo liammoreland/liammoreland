@@ -121,3 +121,15 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+    const loadingScreen = document.getElementById("loading-screen");
+
+    // Fade out and hide the loading screen once content is fully loaded
+    window.addEventListener("load", function () {
+        loadingScreen.classList.add("hidden");
+    });
+
+    // Your other JavaScript for the page goes here
+    // (accordion functionality, smooth scrolling, overlay functionality, etc.)
+});

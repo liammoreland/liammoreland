@@ -72,6 +72,27 @@ body {
     color: #333;
 }
 
+#loading-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    z-index: 2000; /* Make sure it’s on top */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+    transition: opacity 2s ease; /* Slower fade-out transition */
+}
+
+#loading-screen.hidden {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 10s ease; /* Adjusted to 2 seconds for slower fade */
+}
+
 header {
     display: flex;
     justify-content: space-between;
