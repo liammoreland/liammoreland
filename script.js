@@ -39,28 +39,30 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
-    // SMOOTH SCROLL // 
-    const myWorkLink = document.querySelector('a[href="#work"]');
-    const workSection = document.getElementById("work");
+// SMOOTH SCROLL //
+const myWorkLink = document.querySelector('a[href="#work"]');
+const workSection = document.getElementById("work");
 
-    if (myWorkLink && workSection) {
-        myWorkLink.addEventListener("click", function (event) {
-            event.preventDefault(); // Prevent default anchor behavior
+if (myWorkLink) {
+    myWorkLink.addEventListener("click", function (event) {
+        event.preventDefault(); // Prevent default anchor behavior
 
-            console.log("Link clicked. Attempting to scroll to work section...");
-
-            // Smooth scroll to the section using scrollIntoView
+        // Check if we're on index.html
+        if (workSection) {
+            // Smooth scroll to the section on the same page
             workSection.scrollIntoView({
                 behavior: "smooth",
                 block: "start"
             });
-
-            // Confirm in the console that the scroll action was triggered
             console.log("Scrolling initiated to #work section.");
-        });
-    } else {
-        console.warn("Either the link or the target section is missing.");
-    }
+        } else {
+            // Redirect to index.html#work if not already there
+            window.location.href = "index.html#work";
+        }
+    });
+} else {
+    console.warn("The 'My Work' link is missing.");
+}
 
 
 
