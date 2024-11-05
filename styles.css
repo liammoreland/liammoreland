@@ -1,4 +1,9 @@
 /* General Styles */
+
+html, body {
+    scroll-behavior: auto; /* Avoid conflicts */
+}
+
 p {
     font-size: 16px;
     font-family: "Montserrat", sans-serif;
@@ -8,6 +13,7 @@ p {
     color: #1F1F1F;
     margin: 0;
 }
+
 
 h1 {
     font-size: 20px;
@@ -79,11 +85,13 @@ body {
     width: 100vw;
     height: 100vh;
     background-color: white;
-    z-index: 2000; /* Ensure it's on top */
+    z-index: 2000;
+    /* Ensure it's on top */
     display: flex;
     justify-content: center;
     align-items: center;
-    opacity: 1; /* Initial opacity, controlled by JavaScript */
+    opacity: 1;
+    /* Initial opacity, controlled by JavaScript */
 }
 
 header {
@@ -198,18 +206,22 @@ nav ul li a:hover {
 
 
 .tab-content {
-    display: none; /* Hide all content sections by default */
+    display: none;
+    /* Hide all content sections by default */
 }
 
 .tab-content.active {
-    display: block; /* Show only the active content section */
+    display: block;
+    /* Show only the active content section */
 }
 
 .tab-item.active {
     color: #1F1F1F;
     font-weight: bold;
-    border-bottom: 2px solid #1F1F1F; /* Indicate active tab */
+    border-bottom: 2px solid #1F1F1F;
+    /* Indicate active tab */
 }
+
 .tabs ul {
     list-style: none;
     display: flex;
@@ -252,9 +264,11 @@ nav ul li a:hover {
     font-weight: 400;
 }
 
-.project-item h3 {
-    margin-bottom: 12px;
+.project-item h2:hover {
+    cursor: pointer;
 }
+
+
 
 .project-item p {
     font-size: 16px;
@@ -274,7 +288,9 @@ nav ul li a:hover {
 
 
 .item-text {
-    max-width: 448px;
+    max-width: 346px;
+    min-width: 255px;
+    line-height: 175%;
 }
 
 .project-thumbnail-nib {
@@ -288,6 +304,10 @@ nav ul li a:hover {
     margin-left: 20px;
 }
 
+.project-thumbnail-nib:hover {
+    cursor: pointer;
+}
+
 .project-thumbnail-our {
     min-width: 335px;
     min-height: 227px;
@@ -297,6 +317,10 @@ nav ul li a:hover {
     background-color: #ffffff;
     border-radius: 4px;
     margin-left: 20px;
+}
+
+.project-thumbnail-our:hover {
+    cursor: pointer;
 }
 
 .project-thumbnail-ww {
@@ -342,6 +366,9 @@ nav ul li a:hover {
     background-color: #ffffff;
     border-radius: 4px;
     margin-left: 20px;
+}
+.project-thumbnail-s:hover {
+    cursor: pointer;
 }
 
 .project-thumbnail-ss {
@@ -423,7 +450,7 @@ footer p {
 .content {
     padding-top: 24px;
     display: flex;
-    justify-content:space-between;
+    justify-content: space-between;
     margin: auto;
     max-width: 1200px;
     background-color: white;
@@ -654,10 +681,11 @@ body {
         transition: top 0.5s ease-in-out;
         height: fit-content;
     }
+
     .header-content {
         background-color: white;
     }
-    
+
     .logo img {
         max-width: 111px;
         min-height: 23px;
@@ -666,23 +694,23 @@ body {
         margin: 0;
         background-color: white;
     }
-    
+
     nav {
         display: none;
     }
 
 
-.hero {
-    padding-top: 24px;
-    background-image: url('landing.png');
-    background-size: cover;
-    background-position: top;
-    height: 99vh;
-    display: flex;
-    align-items: last baseline;
-    justify-content: center;
-    position: relative;
-}
+    .hero {
+        padding-top: 24px;
+        background-image: url('landing.png');
+        background-size: cover;
+        background-position: top;
+        height: 99vh;
+        display: flex;
+        align-items: last baseline;
+        justify-content: center;
+        position: relative;
+    }
 
 
     .projects {
@@ -733,9 +761,9 @@ body {
         display: flex;
         flex-direction: column-reverse;
         justify-content: space-between;
-        align-items: flex-end;
+        align-items: flex-start;
         padding-top: 24px;
-        padding-bottom: 24px;
+        padding-bottom: 18px;
     }
 
     .project-item p {
@@ -744,6 +772,11 @@ body {
         margin-bottom: 0px;
     }
 
+    .item-text {
+        max-width: 100%;
+        line-height: auto;
+        margin-bottom: 6px;
+    }
     .project-thumbnail-our {
         width: 100%;
         background-image: url('ourspace/OurSpace-img-1.png');
@@ -752,7 +785,9 @@ body {
         background-color: #ffffff;
         border-radius: 6px;
         margin-bottom: 16px;
+        margin-left: 0;
     }
+
     .project-thumbnail-nib {
         width: 100%;
         background-image: url('NIB-img-1.png');
@@ -761,6 +796,7 @@ body {
         background-color: #ffffff;
         border-radius: 6px;
         margin-bottom: 16px;
+        margin-left: 0;
     }
 
     .project-thumbnail-ww {
@@ -771,6 +807,7 @@ body {
         background-color: #ffffff;
         border-radius: 6px;
         margin-bottom: 16px;
+        margin-left: 0;
     }
 
     .project-thumbnail-ocp {
@@ -781,6 +818,7 @@ body {
         background-color: #ffffff;
         border-radius: 6px;
         margin-bottom: 16px;
+        margin-left: 0;
     }
 
     .project-thumbnail-ops {
@@ -791,6 +829,7 @@ body {
         background-color: #ffffff;
         border-radius: 6px;
         margin-bottom: 16px;
+        margin-left: 0;
     }
 
     .project-thumbnail-ss {
@@ -801,6 +840,7 @@ body {
         background-color: #ffffff;
         border-radius: 6px;
         margin-bottom: 16px;
+        margin-left: 0;
     }
 
     .project-thumbnail-s {
@@ -811,6 +851,7 @@ body {
         background-color: #ffffff;
         border-radius: 6px;
         margin-bottom: 16px;
+        margin-left: 0;
     }
 
     footer {
@@ -822,105 +863,113 @@ body {
         padding-left: 18px;
         padding-right: 18px;
     }
-/* case study section */
 
-.nib-header {
-    border-bottom: 3px #144B37 solid;
-    position: relative;
+    /* case study section */
+
+    .nib-header {
+        border-bottom: 3px #144B37 solid;
+        position: relative;
+
+    }
+
+    .our-header {
+        border-bottom: 3px #4EC0F3 solid;
+        position: relative;
+
+    }
+
+    .sproutly-header {
+        border-bottom: 3px #624D34 solid;
+        position: relative;
+
+    }
+
+    .header-content {
+        /* margin-top: 84px; */
+        padding-top: 48px;
+        padding-bottom: 8px;
+        display: flex;
+        flex-direction: row;
+        align-items: baseline;
+        justify-content: space-between;
+        background-color: white;
+        width: calc(100% - 36px);
+        border-bottom: none;
+        gap: 0px;
+        border-bottom: 0.4px #1f1f1f42 solid;
+        box-sizing: border-box;
+    }
+
+    .text-content {
+        padding-bottom: 24px;
+    }
+
+    .content {
+
+        flex-direction: column;
+        /* Stack .text-content above .screenshots */
+        padding-left: 18px;
+        padding-right: 18px;
+        padding-top: 24px;
+        align-items: center;
+        gap: 16px;
+        /* Add spacing between .text-content and .screenshots */
+    }
+
+    /* Make screenshots take full width of .content while respecting padding */
+    .screenshots {
+        width: 100%;
+        /* Fill available width */
+        max-width: 520px;
+        /* Constrain maximum width if needed */
+    }
+
+    /* Ensure each image fills the .screenshots container */
+    .screenshot img {
+        width: 100%;
+        /* Full width inside .screenshots */
+        height: auto;
+        /* Maintain aspect ratio */
+        max-width: 100%;
+        /* Prevent overflow */
+        border-radius: 6px;
+        /* Optional: round corners */
+    }
+
+    #hidemobile {
+        display: none;
+    }
+
+    #hidedesktop {
+        display: flex;
+    }
+
+    .overlay-images img {
+        width: calc(100% - 36px);
+        /* Set consistent width */
+        height: auto;
+        /* Maintain aspect ratio */
+        margin: 30px 0;
+        /* Margin to ensure there's space between images */
+        object-fit: contain;
+        /* Preserve aspect ratio */
+    }
+
+    .overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background: rgba(0, 0, 0, 0.8);
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        z-index: 1001;
+        overflow: hidden;
+        visibility: hidden;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+    }
 
 }
-
-.our-header {
-    border-bottom: 3px #4EC0F3 solid;
-    position: relative;
-
-}
-
-.sproutly-header {
-    border-bottom: 3px #624D34 solid;
-    position: relative;
-
-}
-
-.header-content {
-    /* margin-top: 84px; */
-    padding-top: 48px;
-    padding-bottom: 8px;
-    display: flex;
-    flex-direction:row;
-    align-items: baseline;
-    justify-content: space-between;
-    background-color: white;
-    width: calc(100% - 36px);
-    border-bottom:none;
-    gap: 0px;
-    border-bottom: 0.4px #1f1f1f42 solid;
- box-sizing: border-box;
-}
-
-.text-content {
-    padding-bottom: 24px;
-}
-
-.content {
- 
-    flex-direction: column; /* Stack .text-content above .screenshots */
-    padding-left: 18px;
-    padding-right: 18px;
-    padding-top: 24px;
-    align-items: center;
-    gap: 16px; /* Add spacing between .text-content and .screenshots */
-}
-
-/* Make screenshots take full width of .content while respecting padding */
-.screenshots {
-    width: 100%;         /* Fill available width */
-    max-width: 520px;  
-   /* Constrain maximum width if needed */
-}
-
-/* Ensure each image fills the .screenshots container */
-.screenshot img {
-    width: 100%;         /* Full width inside .screenshots */
-    height: auto;        /* Maintain aspect ratio */
-    max-width: 100%;     /* Prevent overflow */
-    border-radius: 6px;  /* Optional: round corners */}
-
-#hidemobile {
-   display: none;
-}
-
-#hidedesktop {
-    display: flex;
-}
-
-.overlay-images img {
-    width: calc(100% - 36px);
-    /* Set consistent width */
-    height: auto;
-    /* Maintain aspect ratio */
-    margin: 30px 0;
-    /* Margin to ensure there's space between images */
-    object-fit: contain;
-    /* Preserve aspect ratio */
-}
-.overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background: rgba(0, 0, 0, 0.8);
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    z-index: 1001;
-    overflow: hidden;
-    visibility: hidden;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-}
-
-}
-
-

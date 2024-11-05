@@ -31,12 +31,37 @@ document.addEventListener("DOMContentLoaded", function () {
                     loadingScreen.style.backgroundPosition = `0 ${maskPosition}%`; // Move the gradient mask down
                 }
             }, interval);
-        }, 1500); // Initial delay of 1.5 seconds
+        }, 1100); // Initial delay of 1.5 seconds
     } else {
         // Immediately hide the loading screen if not the first visit in this session
         loadingScreen.style.display = "none";
     }
 });
+
+
+    // SMOOTH SCROLL // 
+    const myWorkLink = document.querySelector('a[href="#work"]');
+    const workSection = document.getElementById("work");
+
+    if (myWorkLink && workSection) {
+        myWorkLink.addEventListener("click", function (event) {
+            event.preventDefault(); // Prevent default anchor behavior
+
+            console.log("Link clicked. Attempting to scroll to work section...");
+
+            // Smooth scroll to the section using scrollIntoView
+            workSection.scrollIntoView({
+                behavior: "smooth",
+                block: "start"
+            });
+
+            // Confirm in the console that the scroll action was triggered
+            console.log("Scrolling initiated to #work section.");
+        });
+    } else {
+        console.warn("Either the link or the target section is missing.");
+    }
+
 
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -162,4 +187,5 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 });
+
 
