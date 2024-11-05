@@ -1,4 +1,45 @@
 document.addEventListener("DOMContentLoaded", function () {
+    const loadingScreen = document.getElementById("loading-screen");
+
+    // Check if the user has already visited during this session
+    if (!sessionStorage.getItem("hasVisited")) {
+        // Set the flag in sessionStorage to mark the first visit in this session
+        sessionStorage.setItem("hasVisited", "true");
+
+        // Initial delay before starting the fade
+        setTimeout(() => {
+            let opacity = 1; // Start with full opacity
+            let maskPosition = 0; // Start with the mask at the top
+            const fadeDuration = 1200; // Fade-out duration in milliseconds (1.2 seconds)
+            const interval = 10; // Interval in milliseconds for gradual change
+            const fadeStep = interval / fadeDuration; // Calculate fade step
+
+            // Set up the initial mask style for the curtain effect
+            loadingScreen.style.backgroundImage = "linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1))";
+            loadingScreen.style.backgroundSize = "100% 200%";
+            loadingScreen.style.backgroundPosition = "top";
+
+            const fadeOut = setInterval(() => {
+                opacity -= fadeStep; // Gradually reduce opacity
+                maskPosition += 2; // Move mask downwards for the curtain effect
+
+                if (opacity <= 0) {
+                    clearInterval(fadeOut); // Stop interval when opacity is fully gone
+                    loadingScreen.style.display = "none"; // Hide the loading screen
+                } else {
+                    loadingScreen.style.opacity = opacity; // Update opacity
+                    loadingScreen.style.backgroundPosition = `0 ${maskPosition}%`; // Move the gradient mask down
+                }
+            }, interval);
+        }, 1500); // Initial delay of 1.5 seconds
+    } else {
+        // Immediately hide the loading screen if not the first visit in this session
+        loadingScreen.style.display = "none";
+    }
+});
+
+
+document.addEventListener("DOMContentLoaded", function () {
     // Accordion Functionality
     const accordionHeaders = document.querySelectorAll(".accordion-header");
 
@@ -122,14 +163,3 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
-document.addEventListener("DOMContentLoaded", function () {
-    const loadingScreen = document.getElementById("loading-screen");
-
-    // Fade out and hide the loading screen once content is fully loaded
-    window.addEventListener("load", function () {
-        loadingScreen.classList.add("hidden");
-    });
-
-    // Your other JavaScript for the page goes here
-    // (accordion functionality, smooth scrolling, overlay functionality, etc.)
-});
